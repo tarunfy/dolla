@@ -12,7 +12,7 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s linear;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0%" : "-100%")};
 `;

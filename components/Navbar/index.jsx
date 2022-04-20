@@ -12,7 +12,7 @@ import {
 } from "./NavbarElements";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link href="/">
             <NavLogo>dolla</NavLogo>
           </Link>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -34,7 +34,9 @@ const Navbar = () => {
               <NavLinks to="services">Services</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="signup">Sign Up</NavLinks>
+              <Link href="/signup" passHref>
+                <NavLinks>Sign Up</NavLinks>
+              </Link>
             </NavItem>
           </NavMenu>
           <NavBtn>
