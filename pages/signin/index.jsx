@@ -1,16 +1,16 @@
 import Link from "next/link";
 import {
   Container,
-  FormWrap,
-  Icon,
-  FormContent,
   Form,
-  FormInput,
-  FormH1,
-  FormLabel,
   FormButton,
+  FormContent,
+  FormH1,
+  FormInput,
+  FormLabel,
+  FormWrap,
   Text,
-} from "./SigninElements";
+  Icon,
+} from "../../components/SigninElements";
 
 const SignIn = () => {
   return (
