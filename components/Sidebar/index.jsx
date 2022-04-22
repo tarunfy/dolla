@@ -18,18 +18,51 @@ const Sidebar = ({ toggle, isOpen }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            onClick={toggle}
+            smooth
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
             About
           </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
+          <SidebarLink
+            to="discover"
+            onClick={toggle}
+            smooth
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
             Discover
           </SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>
+          <SidebarLink
+            to="services"
+            onClick={toggle}
+            smooth
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
             Services
           </SidebarLink>
-          <Link href="/signup" passHref>
-            <SidebarLink onClick={toggle}>Sign Up</SidebarLink>
-          </Link>
+
+          <SidebarLink
+            to="signup"
+            onClick={toggle}
+            smooth
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Sign Up
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <Link href="/signin" passHref>
