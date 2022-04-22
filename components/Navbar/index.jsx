@@ -34,9 +34,7 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="services">Services</NavLinks>
             </NavItem>
             <NavItem>
-              <Link href="/signup" passHref>
-                <NavLinks>Sign Up</NavLinks>
-              </Link>
+              <NavLinks to="signup">Sign Up</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
