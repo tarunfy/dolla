@@ -31,7 +31,7 @@ const HeroSection = () => {
         />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>Virtual Banking Made Ezzz</HeroH1>
         <HeroP>
           Signup for a new account today and receive $250 in credit towards your
           next payment.
